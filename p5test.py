@@ -58,36 +58,3 @@ def radix_sort(arr): # 기수정렬 코드
         counting_sort(arr, exp)
         exp *= 10
     return arr
-
-
-
-# 정렬 함수 리스트 
-sort_funcs = {
-    "Built-in sort()": lambda arr: arr.sort(),
-    "Built-in sorted()": lambda arr: sorted(arr),
-    "Merge Sort": lambda arr: merge_sort(arr),
-    "Quick Sort": lambda arr: quick_sort(arr),
-    "Radix Sort": lambda arr: radix_sort(arr),
-} 
-
-# 결과 저장
-sort_times = {}
-
-# 정렬 속도 측정
-for name, func in sort_funcs.items():
-    arr_copy = original_data.copy()
-    start = time.time()
-    result = func(arr_copy)
-    end = time.time() 
-    sort_times[name] = end - start
-    print(f"{name}: {end - start:.4f} sec")
-
-# 그래프 그리기
-plt.figure(figsize=(10, 5))
-plt.bar(sort_times.keys(), sort_times.values(), color='skyblue')
-plt.ylabel("Time (seconds)")
-plt.title("Time difference(Data(n):100,000)")
-plt.xticks(rotation=20)
-plt.grid(axis="y", linestyle="--")
-plt.tight_layout()
-plt.show()
