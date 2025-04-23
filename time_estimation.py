@@ -2,6 +2,8 @@ import random
 import time
 import matplotlib.pyplot as plt
 
+original_data = random.sample(range(0, 10**7), 1000000)  # 1000000만개 숫자 리스트 
+
 def merge_sort(arr): # 병합정렬 코드 
     if len(arr) <= 1:
         return arr
@@ -56,9 +58,8 @@ def radix_sort(arr): # 기수정렬 코드
         counting_sort(arr, exp)
         exp *= 10
     return arr
- 
-import random
-original_data = random.sample(range(0, 10**7), 1000000)  # 1000000만개 숫자 리스트 
+
+
 
 # 정렬 함수 리스트 
 sort_funcs = {
