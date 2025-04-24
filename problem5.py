@@ -7,17 +7,14 @@ start = time.time()
 result = sorted(arr)
 end = time.time() 
 spand_time=end-start
+print(f'{result[:10]}')
 print(f'실행 시간 :{spand_time:.4f}')
-print(f'출력 결과: {result[:10]}')
-
 if spand_time>=3:
-    print('False')
+    print('PASSCORD = \'False\'')
 else:
-    print('True')
+    print('PASSCORD = \'TRUE\'')
 
 # 출력 결과
-'''
-hello
-test try
-[1, 2, 4, 5, 7]
-'''
+#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#실행 시간 :0.3798
+#PASSCORD = 'TRUE'
