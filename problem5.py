@@ -16,7 +16,7 @@ def selection_sort(n, arr):
 ex = [7, 2, 5, 1, 4]
 
 a=selection_sort(5, ex) # 리스트 정렬 함수
-print(a)
+print(a) # 결과 출력
 
 # 출력 결과
 '''
