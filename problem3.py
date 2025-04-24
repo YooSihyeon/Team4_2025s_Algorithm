@@ -10,7 +10,7 @@ def count_with_dict(numbers):
 def sort_by_frequency(freq_dict):
     # 1순위: 등장 횟수 내림차순 (-x[1])
     # 2순위: 숫자 오름차순 (x[0])
-    return sorted(freq_dict.items(), key=lambda x: (-x[1], x[0]))
+    return sorted(freq_dict.items(), key=lambda x: (-x[1], x[1]))
 
 
 if __name__ == "__main__":
