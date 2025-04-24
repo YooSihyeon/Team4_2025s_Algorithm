@@ -1,4 +1,4 @@
-# 숫자 리스트에서 각 숫자의 빈도수 확인
+# 등장 빈도 + 우선순위 정렬
 def count_with_dict(numbers):
     freq_dict = {}  #딕셔너리 생성
     for num in numbers:
