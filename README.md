@@ -66,7 +66,7 @@
 | README.md |         |
 | README.md |         |
 | README.md |         |
-| README.md |         |
+| problem4.py|4번 문제 최종 답안|
 | README.md |         |
 
 
@@ -92,11 +92,14 @@
 ### 4. feature/problem4
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
-| README.md |         |
-| README.md |         |
-| README.md |         |
+| .gitignore |         |
+| README.md | readme   |
+| dfs_code.py |  dfs 알고리즘 관련 소스 코드 |
+| obstacle_case.py |  문제 4번 장애물 추가 버전      |
+| p4_sihyeon.py | 유시현 문제 4번 해결 (예제)  |
+| problem4.py| 문제 4번 풀이 과정 파일 |
+| rectangle_case.py |  grid가 직사각형일 경우 버전     |
+| test.py | 깃허브 연동 테스트 파일  |
 
 ### 5. feature/problem5
 | 파일명 | 파일 설명|
@@ -119,8 +122,6 @@
 ### 7. dev
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
-| README.md |         |
-| README.md |         |
-| README.md |         |
+| .gitignore | gitignore        |
+| README.md |  readme      |
+| test.py |   github 연결 확인용     |
