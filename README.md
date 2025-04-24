@@ -63,19 +63,24 @@
    
 | 파일명 | 파일 설명|
 |-----------|--------------|
+| .gitignore |         |
+| README.md | readme   |
 | README.md |         |
-| README.md |         |
-| README.md |         |
+| problem1.ipyb|1번 문제 최종 답안|
+| problem2.ipyb|2번 문제 최종 답안|
+| problem3.py|3번 문제 최종 답안|
 | problem4.py|4번 문제 최종 답안|
-| README.md |         |
+| problem5.py|5번 문제 최종 답안|
+| problem6.py|최종 문제 최종 답안|
+
 
 
 
 ### 2. feature/problem1
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
+| .gitignore |         |
+| README.md | readme   |
 | README.md |         |
 | README.md |         |
 | README.md |         |
@@ -83,9 +88,9 @@
 ### 3. feature/problem2
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
-| README.md |         |
+| .gitignore |         |
+| README.md | readme   |
+| p3_source.py |  문제 3번 관련 소스 코드  |
 | README.md |         |
 | README.md |         |
 
@@ -104,8 +109,8 @@
 ### 5. feature/problem5
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
+| .gitignore |         |
+| README.md | readme   |
 | README.md |         |
 | README.md |         |
 | README.md |         |
@@ -113,8 +118,8 @@
 ### 6. feature/final
 | 파일명 | 파일 설명|
 |-----------|--------------|
-| README.md |         |
-| README.md |         |
+| .gitignore |         |
+| README.md | readme   |
 | README.md |         |
 | README.md |         |
 | README.md |         |
