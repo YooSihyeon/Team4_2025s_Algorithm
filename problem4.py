@@ -61,6 +61,7 @@ def p4_sh (grid):
 
         return False
 
+    #만약 dfs를 실행한다면,
     if dfs(0, 0):
         #dfs결과가 true면 yes라고 출력
         print("YES")
@@ -72,3 +73,10 @@ def p4_sh (grid):
         print("NO")
 
 p4_sh(grid)
+
+"""
+프롬프트 내역
+1. 경로에 해당하는 숫자값들의 합을 구하기
+2.value_sum = sum(grid[i][j] for i, j in path)
+ all_paths.append((list(path), value_sum))   이것의 value_sum print
+"""
