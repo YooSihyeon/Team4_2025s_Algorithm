@@ -2,12 +2,18 @@
 import random
 import time
 
-arr = random.sample(range(1, 1000001), 100)
+arr = random.sample(range(1, 1000001), 1000000)
 start = time.time()
-result = arr.sort()
+result = sorted(arr)
 end = time.time() 
-print(f"{result}: {end - start:.4f} sec")
+spand_time=end-start
+print(f'실행 시간 :{spand_time:.4f}')
+print(f'출력 결과: {result[:10]}')
 
+if spand_time>=3:
+    print('False')
+else:
+    print('True')
 
 # 출력 결과
 '''
