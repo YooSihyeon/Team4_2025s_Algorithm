@@ -25,37 +25,30 @@ def problem4 (grid):
     
     # path 기록 저장
     path = []
+    
+    # 모든 path 기록 저장
+    all_paths = []
 
     #dfs 를 사용해서 위치 탐색, x,y는 그리드의 위치를 의미함.
-    def dfs (x, y) :
+    def dfs (grid, x, y, visited, path, all_paths) :
     # 범위 밖에 있거나 이미 방문했으면 False 반환
-        if not (0 <= x < grid_n and 0 <= y < grid_n):
-            return False
-        #이미 방문했으면 False 반환
-        if visited[x][y]:
-            return False
-        path.append((x,y)) # path에 경로 저장
-        # 처음 시작 좌표 값이 0이면 True 반환
+        if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or visited[x][y]:
+            return
+        path.append((x, y))
+        visited[x][y] = True
+
         if grid[x][y] == 0:
-            return True
+            all_paths.append(list(path))  # 경로 복사해서 저장
 
-        # 방문한 좌표들을 true로 설정 (원래 모두 false 였음)
-        visited[x][y] = True 
-        # 그리드의 숫자 만큼 이동 하므로
-        # 걸음 수를 그리드의 숫자로 저장
-        step = grid[x][y]
+        else:
+            # 상하좌우로 탐색
+            for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]:
+                dfs(grid, x+dx, y+dy, visited, path, all_paths)
+        
+        # 백트래킹
+        path.pop()
+        visited[x][y] = False
 
-        # 상하좌우 순으로 탐색, 재귀 함수 호출
-        if (dfs(x - step, y) or
-            dfs(x + step, y) or
-            dfs(x, y - step) or
-            dfs(x, y + step)):
-            return True
-        # 만약 경로가 아닌 경우 다시 돌아가야함 
-        # 실패한 경로는 지워짐. 이전 위치로 돌아가게 됨.
-        path.pop() 
-
-        return False
 
     if dfs(0, 0):
         #dfs결과가 true면 yes라고 출력
@@ -66,10 +59,37 @@ def problem4 (grid):
         print(f"{route} → 0 도달 → 성공")
     else: # dfs 결과가 false이면 no라고 출력
         print("NO")
+    return all_paths
 
 problem4(grid)
 
 
 #1. 탈출 가능한 모든 경로 출력하기
+def dfs(grid, x, y, target, visited, path, all_paths):
+    # 범위를 벗어나거나 이미 방문했으면 return
+    if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or visited[x][y]:
+        return
+    
+    path.append((x, y))
+    visited[x][y] = True
+    
+    if grid[x][y] == target:
+        all_paths.append(list(path))  # 경로 복사해서 저장
+    else:
+        # 상하좌우로 탐색
+        for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]:
+            dfs(grid, x+dx, y+dy, target, visited, path, all_paths)
+    
+    # 백트래킹
+    path.pop()
+    visited[x][y] = False
+
+def find_all_paths(grid, target):
+    rows, cols = len(grid), len(grid[0])
+    visited = [[False]*cols for _ in range(rows)]
+    all_paths = []
+    dfs(grid, 0, 0, target, visited, [], all_paths)
+    return all_paths
+
 #2. 그중 가장 짧은 경로 선택
 #3. 그 경로 숫자 의 합 구하기 (정답)
