@@ -26,6 +26,8 @@ def p4_sh (grid):
 
     #dfs 를 사용해서 위치 탐색, x,y는 그리드의 위치를 의미함.
     def dfs (x, y) :
+        # 걸음 수를 그리드의 숫자로 저장
+        step = grid[x][y]
     # 범위 밖에 있거나 이미 방문했으면 False 반환
         if not (0 <= x < rows and 0 <= y < cols):
             return False
@@ -39,6 +41,10 @@ def p4_sh (grid):
         # 처음 시작 좌표 값이 0이면 True 반환
         if grid[x][y] == 0:
             return True
+        else: 
+            for dx, dy in [(-step, 0), (step, 0), (0, -step), (0, step)]:
+                if dfs(x + dx, y + dy):
+                    found = True
 
         # 방문한 좌표들을 true로 설정 (원래 모두 false 였음)
         visited[x][y] = True 
