@@ -21,5 +21,5 @@ if __name__ == "__main__":
     freq_dict = count_with_dict(numbers)
     sorted_items = sort_by_frequency(freq_dict)
 
-    for num, count in sorted_items:
-        print(num, count)  # 문제 출력 형식에 맞게 출력
+for item in sorted_items:
+    print(item)  # (숫자, 빈도수) 튜플 형태
