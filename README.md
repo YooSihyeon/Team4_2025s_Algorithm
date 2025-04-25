@@ -90,7 +90,6 @@
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
-| p3_source.py |  문제 3번 관련 소스 코드  |
 | README.md |         |
 | README.md |         |
 
@@ -103,7 +102,7 @@
 | README.md |         |
 | README.md |         |
 
-### 5. 브런치 : feature/problem5
+### 5. 브런치 : feature/problem4
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
@@ -115,7 +114,7 @@
 | rectangle_case.py |  grid가 직사각형일 경우 버전     |
 | test.py | 깃허브 연동 테스트 파일  |
 
-### 6. 브런치 : feature/problem6
+### 6. 브런치 : feature/problem5
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
