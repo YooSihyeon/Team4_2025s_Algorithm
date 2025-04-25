@@ -73,17 +73,24 @@
 | problem5.py|5번 문제 최종 답안|
 | problem6.py|최종 문제 최종 답안|
 
-
-
+Bubble_sort.py
+Insertion sort.py
+Merge sort.py
+Quick sort.py
+Selection Sort.py
 
 ### 2. 브런치 : feature/problem1
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
-| README.md | readme   |
-| README.md |         |
-| README.md |         |
-| README.md |         |
+| 1.ipynb | 정렬 알고리즘 종합 소스 코드 |
+| Bubble_Sort.py | 버블 정렬 소스 코드 |
+| Insertion Sort.py | 삽입 정렬 소스 코드 |
+| Merge Sort.py | 병합 정렬 소스 코드 |
+| Quick Sort.py | 퀵 정렬 소스 코드 |
+| Selection Sort.py | 선택 정렬 소스 코드 |
+| problem1.py | 문제 1번 풀이 과정 파일 |
+| README.md |  readme |
 
 ### 3. 브런치 : feature/problem2
 | 파일명 | 파일 설명|
