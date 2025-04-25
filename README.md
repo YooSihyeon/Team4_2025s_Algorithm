@@ -97,15 +97,24 @@ Selection Sort.py
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
-| p3_source.py |  문제 3번 관련 소스 코드  |
 | README.md |         |
 | README.md |         |
 
-### 4. 브런치 : feature/problem4
+### 4. 브런치 : feature/problem3
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
+| p3_source.py |  문제 3번 관련 소스 코드  |
+| README.md |         |
+| README.md |         |
+
+### 5. 브런치 : feature/problem4
+| 파일명 | 파일 설명|
+|-----------|--------------|
+| .gitignore |         |
+| README.md | readme   |
+| dfs_chanwoo.py |  dfs 알고리즘 문제 탈출 소스 코드 |
 | dfs_code.py |  dfs 알고리즘 관련 소스 코드 |
 | obstacle_case.py |  문제 4번 장애물 추가 버전      |
 | p4_sihyeon.py | 유시현 문제 4번 해결 (예제)  |
@@ -113,7 +122,20 @@ Selection Sort.py
 | rectangle_case.py |  grid가 직사각형일 경우 버전     |
 | test.py | 깃허브 연동 테스트 파일  |
 
-### 5. 브런치 : feature/problem5
+### 6. 브런치 : feature/problem5
+| 파일명 | 파일 설명|
+|-----------|--------------|
+| .gitignore |         |
+| README.md | readme   |
+| difference_visualize.py| 병합,퀵,기수 정렬의 성능 비교 시각화 코드 파일   |
+| problem5.py| 문제 5번 답안 작성용 샘플 코드 파일   |
+| sort_func.py| 병합,퀵,기수 정렬 구현 소스 코드 파일   |
+| sort_code.py| 정렬과 관련한 알고리즘 소스 코드 파일   |
+| time_comparison.py |   정렬 시간 비교 관련 소스 코드 파일    |
+| time_estimation.py |   각 정렬의 소요 시간 비교 히스토그램 소스 코드 파일    |
+| test.py | 깃허브 커밋 관련 테스트 파일  |
+
+### 7. 브런치 : feature/final
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
@@ -122,16 +144,7 @@ Selection Sort.py
 | README.md |         |
 | README.md |         |
 
-### 6. 브런치 : feature/final
-| 파일명 | 파일 설명|
-|-----------|--------------|
-| .gitignore |         |
-| README.md | readme   |
-| README.md |         |
-| README.md |         |
-| README.md |         |
-
-### 7. 브런치 : dev
+### 8. 브런치 : dev
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore | gitignore        |
@@ -183,7 +196,20 @@ for 루프를 사용하여 모든 방향을 고려하도록 코드를 구성해�
 현재 출력되는 경로의 숫자 합은 119라서 답안 제출을 119로 적어서 제출하였다.
 
 ---
-##  5번 문제 (작성자 : )
+##  5번 문제 (작성자 : 김찬우 )
+arr은 1부터 1000000까지의 범위에 해당하는 양의 정수 1000000개를 모두 뽑아서 리스트로 만들었습니다. 
+예제에서는 중복을 허용한 배열을 보여주셨는데 저는 정렬된 것을 더 쉽게 확인하고 싶어서 (1,2,3,4...으로 표시되도록) 이렇게 리스트를 만들었습니다.
+sorted로 정렬된 리스트를 result 변수에 저장하여 결과를 보여줄 때 result를 출력하였고, 걸린 시간은 time.time()을 써서 시작과 종료 시간을 구한 후
+종료 시간 - 시작 시간으로 계산하였습니다. 
+조건을 만족하였을 때 PASS를 출력하라고 하셨는데 리스트가 잘 정렬되는지는 중간 중간 결과를 print 해보며 확인하여 걸린 시간이 3초 보다 더 걸렸는지, 
+3초 이내였는지만 조건으로 하여 if else문을 작성하였습니다. (if spand_time>=3 or resut!=sorted(arr): print('FALSE')로 코드를 짤까 하다가 이미 정렬을 sorted() 함수로 했는데, 이에 대해서 또 sorted() 함수로 확인하는 것은 의미 없는 작업이다 라고 느껴져서 생략하였습니다.)
+
 ---
-##  추가 문제 (작성자 : )
+##  추가 문제 (작성자 :유시현)
+문제 4번 코드를 바탕으로, 장애물이 있는 경우를 해결해보려고 노력하였다.
+방문한 그리드가 '#'이라면 피하도록 설정을 추가하였다.
+
+하지만, 문제 4번에서 주어진 그리드와는 달리 문자열의 리스트로 생성된 그리드라서 '#'을 인식하는데 문제가 생겼고,
+시간이 부족하여 이후에 해결하지 못하였다. 
+
 ---
