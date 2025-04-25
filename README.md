@@ -91,14 +91,18 @@ Selection Sort.py
 | Selection Sort.py | 선택 정렬 소스 코드 |
 | problem1.py | 문제 1번 풀이 과정 파일 |
 | README.md |  readme |
+| test.py | 깃허브 연동 테스트 파일  |
 
 ### 3. 브런치 : feature/problem2
 | 파일명 | 파일 설명|
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
-| README.md |         |
-| README.md |         |
+| binary_search_iter.py | 이진 탐색 알고리즘 소스코드(반복문버젼) |
+| binary_search_recur.py | 이진 탐색 알고리즘 소스코드(재귀귀버젼) |
+| 2.ipynb | 이진 탐색 알고리즘 종합 소스 코드 |
+| problem2.py | 문제 2번 풀이 과정 파일  |
+| test.py | 깃허브 연동 테스트 파일  |
 
 ### 4. 브런치 : feature/problem3
 | 파일명 | 파일 설명|
@@ -106,8 +110,9 @@ Selection Sort.py
 | .gitignore |         |
 | README.md | readme   |
 | p3_source.py |  문제 3번 관련 소스 코드  |
-| README.md |         |
-| README.md |         |
+| frequency_sort.py |         |
+| frequency_sort2.py |         |
+| problem3.py | 문제 3번 풀이 과정 파일  |
 
 ### 5. 브런치 : feature/problem4
 | 파일명 | 파일 설명|
