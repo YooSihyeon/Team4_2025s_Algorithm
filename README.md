@@ -25,6 +25,7 @@
 | `feature/problem5` | 문제 5번 관련 소스코드들 저장 | `difference_visualize.py` 등                    |
 | `feature/final` |추가 문제 관련 소스코드들 저장 |                      |
 
+교수님! 최종 답안은 main 브런치에 있습니다. 그 외의 브런치는 모두 연습용이며 이 점 참고해주시면 감사하겠습니다.!
 ---
 
 ## 🛠️ 사용 언어
@@ -73,11 +74,6 @@
 | problem5.py|5번 문제 최종 답안|
 | problem6.py|최종 문제 최종 답안|
 
-Bubble_sort.py
-Insertion sort.py
-Merge sort.py
-Quick sort.py
-Selection Sort.py
 
 ### 2. 브런치 : feature/problem1
 | 파일명 | 파일 설명|
@@ -110,8 +106,8 @@ Selection Sort.py
 | .gitignore |         |
 | README.md | readme   |
 | p3_source.py |  문제 3번 관련 소스 코드  |
-| frequency_sort.py |         |
-| frequency_sort2.py |         |
+| frequency_sort.py | 숫자 등장 횟수 정령 코드      |
+| frequency_sort2.py | 숫자 등장 횟수 정렬 코드(긴 버전)  |
 | problem3.py | 문제 3번 풀이 과정 파일  |
 
 ### 5. 브런치 : feature/problem4
@@ -145,9 +141,8 @@ Selection Sort.py
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
-| README.md |         |
-| README.md |         |
-| README.md |         |
+| test.py | 깃허브 커밋 연동 테스트 파일 |
+| 알고리즘_5_2_22000415.ipynb | 최종 문제 예상 문제  |
 
 ### 8. 브런치 : dev
 | 파일명 | 파일 설명|
@@ -187,7 +182,11 @@ start index는 target 이상이 가장 처음 등장하는 위치, end index는 
 본 문제는 정렬, 이진 탐색의 정확한 경계 설정에 대한 이해가 중요했고,
 조건문 흐름과 경계 조정이 익숙하지 않다면 헷갈릴 수 있는 문제였다.
 
-##  3번 문제 (작성자 : )
+##  3번 문제 (작성자 : 김수빈 )
+문제 3에서는 정수 리스트에서 각 숫자의 등장 횟수(빈도수)를 계산한 후, 정해진 기준에 따라 정렬하여 출력하고, 최종적으로 첫 번째 항목의 숫자와 빈도수의 합을 PASSCORD로 출력하는 작업이 요구되었다.
+우선 등장 횟수를 빠르게 계산하기 위해 collections 모듈의 Counter 클래스를 사용하였다. 이를 통해 숫자 리스트에서 각 숫자가 몇 번씩 등장했는지를 손쉽게 계산할 수 있었다. 이후 정렬 기준을 구현하는 것이 문제 해결의 핵심이었다.
+정렬 기준은 다음과 같다. 첫 번째 기준은 빈도수 내림차순이며, 두 번째 기준은 숫자값 내림차순이다. 이를 구현하기 위해 sorted() 함수와 lambda 정렬 키를 함께 사용하여 key=lambda x: (-x[1], x[1])와 같은 방식으로 정렬 조건을 설정했다. 앞은 빈도수, 뒤는 숫자이므로, 각각에 대해 부호를 반대로 주어 내림차순 정렬이 가능하도록 했다.
+정렬된 결과는 (숫자, 빈도수) 형태의 튜플 리스트로 출력되며, 문제의 조건에 따라 첫 번째 튜플의 두 값을 더한 결과 값(=17)을 PASSCORD로 출력하였다.
 ---
 ##  4번 문제 (작성자 : 유시현 )
 dfs 알고리즘을 사용하여 0에 도달하면 루프가 멈추게 되고, 찾지 못하면 false를 반환하며 찾지 못하였다는 신호와 멈추게 된다. 
