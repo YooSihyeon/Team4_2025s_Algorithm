@@ -66,7 +66,6 @@
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
-| README.md |         |
 | problem1.ipyb|1번 문제 최종 답안|
 | problem2.ipyb|2번 문제 최종 답안|
 | problem3.py|3번 문제 최종 답안|
