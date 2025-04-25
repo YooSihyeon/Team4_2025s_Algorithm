@@ -119,8 +119,12 @@
 |-----------|--------------|
 | .gitignore |         |
 | README.md | readme   |
+| difference_visualize.py| 병합,퀵,기수 정렬의 성능 비교 시각화 코드 파일   |
+| problem5.py| 문제 5번 답안 작성용 샘플 코드 파일   |
+| sort_func.py| 병합,퀵,기수 정렬 구현 소스 코드 파일   |
 | sort_code.py| 정렬과 관련한 알고리즘 소스 코드 파일   |
 | time_comparison.py |   정렬 시간 비교 관련 소스 코드 파일    |
+| time_estimation.py |   각 정렬의 소요 시간 비교 히스토그램 소스 코드 파일    |
 | test.py | 깃허브 커밋 관련 테스트 파일  |
 
 ### 7. 브런치 : feature/final
